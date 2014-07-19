@@ -26,6 +26,3 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/gee-common/overlay
 
 # Inherit from gee-common
 $(call inherit-product, device/lge/gee-common/gee-common.mk)
-
-PRODUCT_COPY_FILES += \
-    vendor/du/bootanimations/bootanimation_720_1280.zip:system/media/bootanimation.zip
