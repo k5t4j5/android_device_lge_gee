@@ -14,15 +14,15 @@
 # limitations under the License.
 
 # Get the long list of APNs
-$(call inherit-product-if-exists, vendor/du/config/gsm.mk)
+$(call inherit-product-if-exists, vendor/slim/config/gsm.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/du/config/common.mk)
+$(call inherit-product, vendor/slim/config/common.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := du_gee
+PRODUCT_NAME := slim_gee
 PRODUCT_DEVICE := gee
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Optimus G
